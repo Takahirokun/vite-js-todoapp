@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="jp">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <title>Vite Vanilla JS ToDo App</title>
   </head>
   <body>
 	<div class="input-area">
-		<input placeholder="ToDoを入力" />
-		<button>通知</button>
+		<input id="add-text" placeholder="ToDoを入力" />
+		<button id="add-button">追加</button>
 	</div>
- 	<div>
-		<p>未完了のToDo</p>
-		<ul>
+ 	<div class="incomplete-area">
+		<p class="title">未完了のToDo</p>
+		<ul id="incomplete-list">
 			<li>
-				<div>
-					<p>ToDoです</p>
+				<div class="list-row">
+					<p class="todo-item">ToDoです</p>
 					<button>完了</button>
 					<button>削除</button>
 				</div>
@@ -22,13 +22,12 @@
 		</ul>
 	</div> 
 	<div>
- 	<div>
-		<p>完了のToDo</p>
+ 	<div class="complete-area">
+		<p class="title">完了のToDo</p>
 		<ul>
 			<li>
-				<div>
-					<p>ToDoでした</p>
-					<button>完了</button>
+				<div class="list-row">
+					<p class="todo-item">ToDoでした</p>
 					<button>戻す</button>
 				</div>
 			</li>
