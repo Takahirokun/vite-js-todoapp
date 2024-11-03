@@ -1,13 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="jp">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Vite Vanilla JS ToDo App</title>
   </head>
   <body>
-    <div id="app"></div>
+	<div class="input-area">
+		<input placeholder="ToDoを入力" />
+		<button>通知</button>
+	</div>
+ 	<div>
+		<p>未完了のToDo</p>
+		<ul>
+			<li>
+				<div>
+					<p>ToDoです</p>
+					<button>完了</button>
+					<button>削除</button>
+				</div>
+			</li>
+		</ul>
+	</div> 
+	<div>
+ 	<div>
+		<p>完了のToDo</p>
+		<ul>
+			<li>
+				<div>
+					<p>ToDoでした</p>
+					<button>完了</button>
+					<button>戻す</button>
+				</div>
+			</li>
+		</ul>
+	</div> 
+	</div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
